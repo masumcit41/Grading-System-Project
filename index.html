@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTEB grading system</title>
+
+                                    <!-- bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+                                   <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+                                   <!-- my css cdn -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <H1 class="text-center heading fw-bolder rounded-pill bg-secondary text-dark">Fifth Semester</H1>
+                          <!-- Taking input from user -->
+<div class="row">
+    <div class="col-lg-2" ></div>
+    <div class="col-lg-4 left">
+        <form action="/action_page.php" method="get" >
+            <h3 class="c1">Input your marks according to your subjects : </h3>
+            <label for="lname">Programming in JAVA(66651)</label><br>
+            <input name="somename"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="PJ" />
+            <br>
+            <label for="lname">Surveillance Security System(66653)</label><br>
+            <input name="somename" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="SSS"/>
+            <br>
+            <label for="lname">Web Development Project(66654)</label><br>
+            <input name="somename" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="WDP"/>
+            <br>
+            <label for="lname">Operating System Application(66652)</label><br>
+            <input name="somename" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="OSA"/>
+            <br>
+            <label for="lname">PCB Design and Circuit Making(66656)</label><br>
+            <input name="somename" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="PCB"/>
+            <br>
+            <label for="lname">Accounting Theory and Practice(66651)</label><br>
+            <input name="somename" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="ATP"/>
+            <br>
+            <label for="lname">Sequential Logic System(66655)</label><br>
+            <input name="somename" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+            type = "number"
+            maxlength = "3" id="SLS"/>
+            <br>
+            <br>
+            <button type="button" class="btn fw-bolder" onclick="gpa()">Submit</button>
+            <button type="button" class="btn fw-bolder bg-secondary" onclick="window.print()">Print</button>
+                         <!-- Taking input from user end -->
+                         
+                         <!-- output will receive here -->
+    
+            
+              
+        </form>
+    </div>
+    <div class="col-lg-4 right">
+           <h3 class="c2">Your Gradings,GPA and Average : </h3>
+           <p class="fw-bolder">Programming in JAVA(66651)           : <span id="s1"> </span></p>
+           <p class="fw-bolder">Surveillance Security System(66653)  : <span id="s2"> </span></p>
+           <p class="fw-bolder">Web Development Project(66654)       : <span id="s3"> </span></p>
+           <p class="fw-bolder">Operating System Application(66652)  : <span id="s4"> </span></p>
+           <p class="fw-bolder">PCB Design and Circuit Making(66656) : <span id="s5"> </span></p>
+           <p class="fw-bolder">Accounting Theory and Practice(66651): <span id="s6"> </span></p>
+           <p class="fw-bolder">Sequential Logic System(66655)       : <span id="s7"> </span></p>
+
+          <div class="c3">
+            <p class=" fw-bolder">Your GPA : <span id="gpa"></span></p>
+            <p class=" fw-bolder">Your Average mark is : <span id="average"></span></p>
+          </div>
+           
+           
+    </div>
+    <div class="col-lg-2" ></div>
+</div>
+
+
+<p id="demo"></p>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

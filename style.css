@@ -1,0 +1,62 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+H1
+{
+  font-family: 'Anton', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.c1
+{
+  font-family: 'Anton', sans-serif;
+font-family: 'Oswald', sans-serif;
+}
+.c2
+{
+  margin-bottom: 40px;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+.c3
+{
+  border: 2px solid rgb(111, 0, 255);
+  padding: 10px;
+  border-radius: 50px 20px;
+  background-color: aquamarine;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Oswald', sans-serif;  
+  font-size: 28px;
+
+}
+.right
+{
+  margin-top: 0px;
+  font-size: 20px;
+}
+.left
+{
+  margin-left: 20px;
+  font-size: 18px;
+}
+.btn {
+  color: #000000;
+  background: #993399;
+  font-size: large;
+  }
+#demo
+{
+  text-align: center;
+  font-weight: bold;
+}
+  
